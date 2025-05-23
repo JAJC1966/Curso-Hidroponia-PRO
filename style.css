@@ -1,86 +1,59 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #e8f5e9, #ffffff);
-    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
 }
-
-.header {
-    background-color: #007b4f;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+header {
+    background: #006400;
+    color: #fff;
+    padding: 10px 0;
 }
-
-.logo {
-    width: 80px;
-    margin-bottom: 1rem;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-}
-
-main {
-    padding: 2rem;
-    max-width: 800px;
+nav {
+    width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.fade-in {
-    animation: fadeIn 1s ease-in;
+nav img {
+    margin-right: 10px;
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+nav ul {
+    list-style: none;
+    display: flex;
 }
-
-.intro {
-    text-align: center;
-    margin-bottom: 2rem;
+nav ul li {
+    margin: 0 15px;
 }
-
-.form-section {
-    background-color: #f0f8f5;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
-
-input, button {
-    padding: 0.8rem;
-    width: 100%;
-    max-width: 400px;
-    margin: 0.5rem auto;
-    display: block;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.intro, section {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    background: #fff;
+    margin-bottom: 20px;
 }
-
-button {
-    background-color: #007b4f;
+h1, h2, h3 {
+    color: #006400;
+}
+.boton {
+    display: inline-block;
+    background: #006400;
     color: white;
-    border: none;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
 }
-
-button:hover {
-    background-color: #005f3c;
-}
-
 footer {
-    background-color: #004d35;
+    background: #003300;
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
+    padding: 15px 0;
 }
